@@ -1,4 +1,4 @@
-extends Sprite
+extends Area2D
 
 var mouseIn = false
 
@@ -7,15 +7,20 @@ func _ready():
 	
 func _process(delta):
 	if (mouseIn && Input.is_action_pressed("click")):
-		set_position(get_viewport().get_mouse_position())
-	pass
+		global_position = get_global_mouse_position()
 
-func _on_Area2D_mouse_entered():
-	print("Mouse Entrou")
+
+func _on_Node2D_area_entered(area):
+	if area.is_in_group(Game.LIXO):
+		
+		queue_free()
+		pass
+		
+
+
+func _on_Node2D_mouse_entered():
 	mouseIn = true
-	pass
 
-func _on_Area2D_mouse_exited():
-	print("Mouse Saiu")
+
+func _on_Node2D_mouse_exited():
 	mouseIn = false
-	pass

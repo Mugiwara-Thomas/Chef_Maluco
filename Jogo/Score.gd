@@ -1,5 +1,5 @@
 extends Node
-var vida = 0
+var vida = 3
 
 # Declare member variables here. Examples:
 # var a = 2
@@ -12,4 +12,5 @@ func _ready():
 	
 func perde_vida():
 	vida -=1
-	get_tree().change_scene("res://main.tscn")	
+	if(vida == 0):
+		get_tree().change_scene("res://Menu.tscn")	

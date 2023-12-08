@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assets/table.png" type="Texture" id=1]
+[ext_resource path="res://Objects/Mesa.gd" type="Script" id=2]
+
+[node name="Mesa" type="Area2D"]
+script = ExtResource( 2 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2( -1, 52.625 )
+scale = Vector2( 1.21166, 0.968654 )
+polygon = PoolVector2Array( -169.189, -67.7486, 160.11, -68.781, 112.242, -126.593, -119.67, -125.561 )
+
+[node name="Table" type="Sprite" parent="."]
+position = Vector2( -1, 52.625 )
+scale = Vector2( 1.21166, 0.968654 )
+texture = ExtResource( 1 )

@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Ghostpixxells_pixelfood/71_nacho.png" type="Texture" id=1]
+
+[node name="Nacho" type="Node2D"]
+
+[node name="71Nacho" type="Sprite" parent="."]
+position = Vector2( 1, -2 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 1 )

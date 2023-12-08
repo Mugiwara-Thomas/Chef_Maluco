@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://itens/Item__24.png" type="Texture" id=1]
+
+[node name="Node2D" type="Node2D"]
+position = Vector2( 332, 178 )
+
+[node name="Item24" type="Sprite" parent="."]
+position = Vector2( -2, 0 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 1 )

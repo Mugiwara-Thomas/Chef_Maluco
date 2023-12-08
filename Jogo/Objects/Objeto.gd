@@ -24,3 +24,39 @@ func _on_Node2D_mouse_entered():
 
 func _on_Node2D_mouse_exited():
 	mouseIn = false
+
+
+func _on_Item61_area_entered(area):
+	pass # Replace with function body.
+
+
+func _on_Item61_mouse_entered():
+	pass # Replace with function body.
+
+
+func _on_Item61_mouse_exited():
+	pass # Replace with function body.
+
+
+func _on_Nacho_area_entered(area):
+	pass # Replace with function body.
+
+
+func _on_Nacho_mouse_entered():
+	pass # Replace with function body.
+
+
+func _on_Nacho_mouse_exited():
+	pass # Replace with function body.
+
+
+func _on_Pizza_area_entered(area):
+	pass # Replace with function body.
+
+
+func _on_Pizza_mouse_exited():
+	pass # Replace with function body.
+
+
+func _on_Pizza_mouse_entered():
+	pass # Replace with function body.

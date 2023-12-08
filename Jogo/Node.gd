@@ -24,7 +24,7 @@ var Ancora = preload("res://Objects/Ancora.tscn")
 func _ready():
 	randomize()
 #	var comidas = [Bomba, Ancora, Bota, Escudo, Chave, Bau, Moeda, Steak, Pizza, Nacho, BoloDeChocolate, Donut, Gelatina, Hotdog, Pao, Pudim, Sanduiche]
-	var comidas = [Ancora]
+	var comidas = [Sanduiche]
 	var matrix=[]
 	for x in range(18):
 		matrix.append([])

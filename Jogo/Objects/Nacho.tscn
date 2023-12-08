@@ -1,12 +1,12 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Ghostpixxells_pixelfood/71_nacho.png" type="Texture" id=1]
-[ext_resource path="res://Objects/Objeto.gd" type="Script" id=2]
+[ext_resource path="res://Objects/COMIDA.gd" type="Script" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 13, 14.5 )
 
-[node name="Nacho" type="Area2D"]
+[node name="Node2D" type="Area2D"]
 script = ExtResource( 2 )
 
 [node name="71Nacho" type="Sprite" parent="."]

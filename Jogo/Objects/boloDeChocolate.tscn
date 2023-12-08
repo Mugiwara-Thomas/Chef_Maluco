@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Ghostpixxells_pixelfood/30_chocolatecake.png" type="Texture" id=1]
+
+[node name="Node2D" type="Node2D"]
+position = Vector2( 120, 68 )
+
+[node name="30Chocolatecake" type="Sprite" parent="."]
+position = Vector2( -1, -1 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 1 )

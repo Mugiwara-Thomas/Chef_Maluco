@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Ghostpixxells_pixelfood/95_steak.png" type="Texture" id=1]
+
+[node name="Steak" type="Node2D"]
+scale = Vector2( 2, 2 )
+
+[node name="95Steak" type="Sprite" parent="."]
+position = Vector2( 1, 0 )
+texture = ExtResource( 1 )

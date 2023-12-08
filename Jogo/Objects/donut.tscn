@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Ghostpixxells_pixelfood/34_donut.png" type="Texture" id=1]
+
+[node name="Node2D" type="Node2D"]
+position = Vector2( 76, 44 )
+
+[node name="34Donut" type="Sprite" parent="."]
+position = Vector2( 2, -1 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 1 )

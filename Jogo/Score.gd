@@ -13,4 +13,4 @@ func _ready():
 func perde_vida():
 	vida -=1
 	if(vida == 0):
-		get_tree().change_scene("res://Menu.tscn")	
+		get_tree().change_scene("res://main.tscn")	

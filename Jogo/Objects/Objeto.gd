@@ -14,8 +14,6 @@ func _process(delta):
 func _on_Node2D_area_entered(area):
 		if area.is_in_group(Game.LIXO):
 			queue_free()
-			Game.pontuacao += 1
-			print(Game.pontuacao)
 		if area.is_in_group(Game.COMIDA):
 			queue_free()
 			Score.perde_vida()

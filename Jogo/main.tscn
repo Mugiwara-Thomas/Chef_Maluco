@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://Objects/Mesa.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/mario.png" type="Texture" id=2]
@@ -9,7 +9,8 @@
 [ext_resource path="res://Node.gd" type="Script" id=7]
 [ext_resource path="res://Objects/Label.tscn" type="PackedScene" id=8]
 [ext_resource path="res://cheio.png" type="Texture" id=9]
-[ext_resource path="res://Life.gd" type="Script" id=10]
+[ext_resource path="res://Sprite2.gd" type="Script" id=10]
+[ext_resource path="res://Sprite3.gd" type="Script" id=11]
 
 [node name="Cenário" type="Node2D"]
 light_mask = 0
@@ -19,7 +20,7 @@ script = ExtResource( 5 )
 [node name="Mesa" type="Node" parent="."]
 
 [node name="Kitchen" type="Sprite" parent="."]
-position = Vector2( 150.567, 122.25 )
+position = Vector2( 169, 134 )
 scale = Vector2( 0.168441, 0.173691 )
 texture = ExtResource( 4 )
 
@@ -42,8 +43,6 @@ script = ExtResource( 7 )
 [node name="Lixo" parent="." instance=ExtResource( 3 )]
 position = Vector2( -138, 372 )
 scale = Vector2( 0.68, 0.68 )
-collision_layer = 2
-collision_mask = 2
 
 [node name="Pontuacao" parent="." instance=ExtResource( 8 )]
 visible = false
@@ -51,16 +50,27 @@ position = Vector2( 404, -204 )
 scale = Vector2( 2, 2 )
 
 [node name="Ui" type="CanvasLayer" parent="."]
-visible = false
 
 [node name="Life" type="Control" parent="Ui"]
 margin_right = 40.0
 margin_bottom = 40.0
-script = ExtResource( 10 )
 
-[node name="Vidas" type="TextureRect" parent="Ui/Life"]
-margin_right = 250.0
-margin_bottom = 254.0
-rect_scale = Vector2( 0.4, 0.4 )
+[node name="Sprite" type="Sprite" parent="Ui/Life"]
+position = Vector2( 153, 66 )
+scale = Vector2( 0.431, 0.425 )
 texture = ExtResource( 9 )
-expand = true
+offset = Vector2( -140.5, 3.05176e-05 )
+
+[node name="Sprite3" type="Sprite" parent="Ui/Life"]
+position = Vector2( 434, 67 )
+scale = Vector2( 0.431, 0.425 )
+texture = ExtResource( 9 )
+offset = Vector2( -140.5, 3.05176e-05 )
+script = ExtResource( 11 )
+
+[node name="Sprite2" type="Sprite" parent="Ui/Life"]
+position = Vector2( 291, 68 )
+scale = Vector2( 0.431, 0.425 )
+texture = ExtResource( 9 )
+offset = Vector2( -140.5, 3.05176e-05 )
+script = ExtResource( 10 )

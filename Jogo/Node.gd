@@ -1,10 +1,10 @@
 extends Node
 
 # Comidas
-var comidas = [preload("res://Objects/Steak.tscn"), preload("res://Objects/Pizza.tscn"), preload("res://Objects/Nacho.tscn"),
-			   preload("res://Objects/boloDeChocolate.tscn"), preload("res://Objects/donut.tscn"), preload("res://Objects/gelatina.tscn"),
-			   preload("res://Objects/hotdog.tscn"), preload("res://Objects/pao.tscn"), preload("res://Objects/Pudim.tscn"),
-			   preload("res://Objects/sanduiche.tscn")]
+var comidas = [preload("res://Objects/bau.tscn"),preload("res://Objects/Bomba.tscn"),preload("res://Objects/boloDeChocolate.tscn"),
+preload("res://Objects/donut.tscn"),preload("res://Objects/Escudo.tscn"),preload("res://Objects/gelatina.tscn"),
+preload("res://Objects/hotdog.tscn"),preload("res://Objects/modea.tscn"),preload("res://Objects/Nacho.tscn"),preload("res://Objects/pao.tscn"),
+preload("res://Objects/Pizza.tscn"),preload("res://Objects/Pudim.tscn"),preload("res://Objects/Steak.tscn"),preload("res://Objects/sanduiche.tscn"),]
 
 # Grupo para objetos de comida
 const GROUP_COMIDAS = "comidas_group"

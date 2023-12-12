@@ -7,7 +7,6 @@
 radius = 14.0
 
 [node name="Node2D" type="Area2D"]
-collision_layer = 0
 script = ExtResource( 2 )
 
 [node name="65Loafbread" type="Sprite" parent="."]

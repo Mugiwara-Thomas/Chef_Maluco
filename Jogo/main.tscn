@@ -66,11 +66,11 @@ position = Vector2( 434, 67 )
 scale = Vector2( 0.431, 0.425 )
 texture = ExtResource( 9 )
 offset = Vector2( -140.5, 3.05176e-05 )
-script = ExtResource( 11 )
+script = ExtResource( 10 )
 
 [node name="Sprite2" type="Sprite" parent="Ui/Life"]
 position = Vector2( 291, 68 )
 scale = Vector2( 0.431, 0.425 )
 texture = ExtResource( 9 )
 offset = Vector2( -140.5, 3.05176e-05 )
-script = ExtResource( 10 )
+script = ExtResource( 11 )

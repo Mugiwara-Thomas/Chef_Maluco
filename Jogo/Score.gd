@@ -18,4 +18,5 @@ func restart_application():
 func perde_vida():
 	vida -=1
 	if(vida == 0):
-		restart_application()
+		get_tree().change_scene("res://Perdeu-Cena.tscn")
+		vida = 3

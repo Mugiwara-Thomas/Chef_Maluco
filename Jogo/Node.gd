@@ -7,14 +7,6 @@ preload("res://Objects/hotdog.tscn"),preload("res://Objects/modea.tscn"),preload
 preload("res://Objects/Pizza.tscn"),preload("res://Objects/Pudim.tscn"),preload("res://Objects/Steak.tscn"),preload("res://Objects/sanduiche.tscn"),]
 
 # Grupo para objetos de comida
-const GROUP_COMIDAS = "comidas_group"
-
-func add_comidas_to_group():
-	var comidas_nodes = get_tree().get_nodes_in_group(GROUP_COMIDAS)
-	print(comidas_nodes)
-	for comida in comidas_nodes:
-		comida.group = GROUP_COMIDAS
-		print("Comida adicionada ao grupo:", comida)
 
 func _ready():
 	randomize()
@@ -28,26 +20,18 @@ func _ready():
 	for y in range(positions_y.size()):
 		for x in range(positions_x.size()):
 			matrix.append(create_food(positions_x[x], positions_y[y]))
-	add_comidas_to_group()
 
-	# Configura exceções de colisão para o grupo GROUP_COMIDAS
-	configure_collision_exceptions()
 
 # Função para criar e adicionar um objeto de comida
 func create_food(pos_x, pos_y):
+	if comidas.size() == 0:
+		get_tree().change_scene("res://Menu.tscn")
+		return
+
 	var tipos = comidas[randi() % comidas.size()]
 	var comida = tipos.instance()
 	comida.position = Vector2(pos_x, pos_y)
 	add_child(comida)
 	return [pos_x, pos_y]
 
-# Função para configurar exceções de colisão para o grupo GROUP_COMIDAS
-func configure_collision_exceptions():
-	# Obtém todas as comidas no grupo GROUP_COMIDAS
-	var comidas_nodes = get_tree().get_nodes_in_group(GROUP_COMIDAS)
 
-	# Configura exceções de colisão entre todas as comidas no grupo
-	for comida_a in comidas_nodes:
-		for comida_b in comidas_nodes:
-			if comida_a != comida_b:
-				comida_a.add_collision_exception_with(comida_b)

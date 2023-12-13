@@ -25,10 +25,28 @@ func _on_Node2D_area_entered(area):
 		if estaSegurandoObjeto:
 			objetoAtual.queue_free()
 			estaSegurandoObjeto = false
+			
+			var pontuacao2 = Game.pontuacao + 1
+			Game.pontuacao = Game.pontuacao + 1
+			print(pontuacao2)
+			
+			Game.itens = Game.itens - 1
+			var item = Game.itens
+			print(item)
+			
+			
 	elif area.is_in_group(Game.COMIDA):
 		if estaSegurandoObjeto:
 			objetoAtual.queue_free()
-			estaSegurandoObjeto = false
+			estaSegurandoObjeto = false	
+			
+			var pontuacao2 = Game.pontuacao - 1
+			Game.pontuacao = Game.pontuacao - 1
+			print(pontuacao2)
+			
+			Game.itens = Game.itens - 1
+			var item = Game.itens
+			print(item)
 			Score.perde_vida()
 
 func _on_Node2D_mouse_exited():

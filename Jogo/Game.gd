@@ -4,7 +4,7 @@ const MESA = "MESA"
 const LIXO = "LIXO"
 const COMIDA = "COMIDA"
 var pontuacao = 0
-var itens = 1
+var itens = 12
 var vida = 3
 
 func _ready():

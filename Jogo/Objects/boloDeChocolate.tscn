@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Ghostpixxells_pixelfood/30_chocolatecake.png" type="Texture" id=1]
-[ext_resource path="res://Objects/Objeto.gd" type="Script" id=2]
+[ext_resource path="res://Objects/COMIDA.gd" type="Script" id=2]
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 13.0
@@ -9,6 +9,7 @@ height = 4.0
 
 [node name="Node2D" type="Area2D"]
 position = Vector2( 120, 68 )
+collision_layer = 8192
 script = ExtResource( 2 )
 
 [node name="30Chocolatecake" type="Sprite" parent="."]

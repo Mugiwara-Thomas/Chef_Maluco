@@ -7,6 +7,7 @@
 radius = 20.0
 
 [node name="Node2D" type="Area2D"]
+collision_mask = 2
 script = ExtResource( 2 )
 
 [node name="59Jelly" type="Sprite" parent="."]

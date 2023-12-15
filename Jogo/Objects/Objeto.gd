@@ -28,7 +28,6 @@ func _on_Node2D_area_entered(area):
 			
 			var pontuacao2 = Game.pontuacao + 1
 			Game.pontuacao = Game.pontuacao + 1
-			print(pontuacao2)
 			
 			Game.itens = Game.itens - 1
 			var item = Game.itens
@@ -42,7 +41,6 @@ func _on_Node2D_area_entered(area):
 			
 			var pontuacao2 = Game.pontuacao - 1
 			Game.pontuacao = Game.pontuacao - 1
-			print(pontuacao2)
 			
 			Game.itens = Game.itens - 1
 			var item = Game.itens
